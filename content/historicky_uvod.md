@@ -22,7 +22,7 @@ budoucím – budeme tedy znát trajektorii. Uvažujme nejjednodušší případ
 v jedné dimenzi. Částice se na počátku, $t_0$, nachází v bodě $x_0$. Pro
 částici pohybující se podél osy $x$ v potenciálu V($x$) můžeme zapsat
 pohybovou rovnici jako
-$$m \frac{\dd ^2 x}{\dd t^2} = -\frac{\dd {V}}{\dd x}  
+$$m \frac{\mathrm{d} ^2 x}{\mathrm{d} t^2} = -\frac{\mathrm{d} {V}}{\mathrm{d} x}  
 \label{rov:Castice}$$ přičemž řešením bude poloha částice v čase $t$,
 $x(t; x_0,p_0)$.
 
@@ -35,14 +35,14 @@ $$H = \frac{p^2}{2m}+V
 Tato funkce je funkcí času, neboť částice se pohybuje a mění se tak její
 rychlost (a tedy i hybnost a kinetická energie), stejně jako její poloha
 (a tedy energie potenciální). Snadno nyní dokážeme, že $H$ se s časem
-nemění. Bude nás zajímat výraz $\frac{\dd H}{\dd t}$. S uvážením, že
-$$\frac{\dd V}{\dd t} = \frac{\dd V}{\dd x} \frac{\dd x}{\dd t}
+nemění. Bude nás zajímat výraz $\frac{\mathrm{d} H}{\mathrm{d} t}$. S uvážením, že
+$$\frac{\mathrm{d} V}{\mathrm{d} t} = \frac{\mathrm{d} V}{\mathrm{d} x} \frac{\mathrm{d} x}{\mathrm{d} t}
 \label{rov:Castice2}$$ a
-$$\frac{\dd (p^2)}{\dd t}= 2p\frac{\dd p}{\dd t} = 2m^2v\frac{\dd v}{\dd t} = 2m^2\frac{\dd x}{\dd t}\frac{\dd^2x}{\dd t^2}
+$$\frac{\mathrm{d} (p^2)}{\mathrm{d} t}= 2p\frac{\mathrm{d} p}{\mathrm{d} t} = 2m^2v\frac{\mathrm{d} v}{\mathrm{d} t} = 2m^2\frac{\mathrm{d} x}{\mathrm{d} t}\frac{\mathrm{d}^2x}{\mathrm{d} t^2}
 \label{rov:Castice3}$$ vidíme, že
-$$\frac{\dd H}{\dd t} = \frac{\dd x}{\dd t}\left ( m\frac{\dd ^2x}{\dd t^2}+\frac{\dd V}{\dd x}\right)
+$$\frac{\mathrm{d} H}{\mathrm{d} t} = \frac{\mathrm{d} x}{\mathrm{d} t}\left ( m\frac{\mathrm{d} ^2x}{\mathrm{d} t^2}+\frac{\mathrm{d} V}{\mathrm{d} x}\right)
 \label{rov:Castice4}$$ Výraz v závorce je ovšem dle Newtonova zákona
-(rovnice ) roven nule a tedy i $\frac{\dd H}{\dd t}$ je rovno nule.
+(rovnice $\eqref{rov:Castice}$) roven nule a tedy i $\frac{\mathrm{d} H}{\mathrm{d} t}$ je rovno nule.
 Energie se tudíž v klasické mechanice zachovává. Dlužno podotknout, že
 pokud umístíme částici například do časově proměnného pole, Hamiltonova
 funkce se bude měnit s časem explicitně a energie se pak již zachovávat
@@ -67,16 +67,11 @@ při průchodu světla dvojštěrbinou (viz obrázek \[obr:Interference\]).
 Vlny procházející štěrbinami interferují a na stínítku tak vzniká
 interferenční obrazec.
 
-\[ht\]
-
 Bude užitečné si na začátek zopakovat některé veličiny, které
 charakterizují vlnění (viz obrázek \[obr:Vlna\]). Pohyb vlny (zde
 v jedné dimenzi) je určen velikostí nějaké veličiny (například výšky
 vodní hladiny či intenzity elektrického pole) měnící se v prostoru a
 v čase, označme si tuto veličinu $A(x,t)$.
-
-\[ht\] ![Schematické znázornění
-vlny[]{data-label="obr:Vlna"}](vlna-bw.pdf "fig:")
 
 V nejjednodušším případě se bude vlna šířit harmonicky ve směru osy $x$
 $$A(x, t) = A_0 \sin\left[2\pi \left ( \frac{x}{\lambda}-\frac{t}{T} \right)\right]
@@ -87,7 +82,7 @@ sobě jdoucích vln pro určité místo. Reciprokou hodnotu periody $T$
 označujeme jako **frekvenci** $\nu = \frac{1}{T}$. Mezi vlnovou délkou a
 frekvencí platí vztah $$\lambda = \frac{c}{\nu}
 \label{rov:Vlna2}$$ K popisu vlny se také používá veličina **vlnočet**
-$\widetilde{\nu}=\nicefrac{\nu}{c}$. Ten nám udává, kolik vlnových délek
+$\widetilde{\nu}=\nu/c$. Ten nám udává, kolik vlnových délek
 se vměstná na 1m. Často se místo vlnové délky a frekvence setkáváme se
 zápisem pomocí **vlnového čísla** $k$ a **úhlové frekvence** $\omega$
 $$k = \frac{2\pi}{\lambda}
@@ -109,7 +104,7 @@ důležitý.
 
 Ukazuje se, že každé vlnění je možné popsat **vlnovou rovnicí** (zde
 opět pro jednorozměrný problém)
-$$\boxed{\frac{\pd ^2A(x,t)}{\pd x^2} = \frac{1}{\nu^2}\frac{\pd^2A(x,t)}{\pd t^2}}
+$$\boxed{\frac{\partial ^2A(x,t)}{\partial x^2} = \frac{1}{\nu^2}\frac{\partial^2A(x,t)}{\partial t^2}}
 \label{rov:Vlna9}$$ Z matematického hlediska jde o parciální
 diferenciální rovnici druhého řádu. Tuto rovnici lze kupříkladu pro
 popis pohybu struny na kytaře odvodit z Newtonovy mechaniky, v případě
@@ -190,8 +185,6 @@ destiček. Ze závislosti prošlého fotoelektrického proudu na vloženém
 napětí můžeme zjistit jak maximální kinetickou energii vyražených
 elektronů tak i jejich celkové množství.
 
-\[ht\]
-
 Co bychom předpokládali z hlediska klasické teorie? K vyražení elektronů
 by mělo dojít světlem každé vlnové délky, pokud bude mít dostatečnou
 intenzitu. Ukázalo se však, že k průchodu fotoelektrického proudu
@@ -210,12 +203,13 @@ Rovnice vyjadřuje zachování energie – energie fotonu se musí rovnat
 výstupní práci elektronu a jeho kinetické energii.
 
 Jestliže nafitujeme hodnotu experimentálních dat na rovnici , získáme
-hodnotu $h = \SI{6.626e-34}{\J\s}$. Einsteinův balíček energie je
+hodnotu $h = 6{,}626e-34 \mathrm{J s}$. Einsteinův balíček energie je
 charakterizován úplně stejně jako Planckův balíček energie!
 
-[Fotoelektronová spektroskopie]{} Fotoelektrický jev je principem
-techniky nazvané fotoelektronová spektroskopie. Pokud ozařujeme vzorek
-zářením o dostatečné energii, dojde k vyražení elektronů, jejichž
+### BOX: Fotoelektronová spektroskopie
+
+Fotoelektrický jev je principem techniky nazvané fotoelektronová spektroskopie.
+Pokud ozařujeme vzorek zářením o dostatečné energii, dojde k vyražení elektronů, jejichž
 rychlost můžeme měřit. S využitím vztahu pak získáme hodnotu výstupní
 práce pro daný vzorek. Tato práce představuje vlastně vazebnou energii,
 kterou je držen elektron v dané molekule či v materiálu. Z hodnoty
@@ -228,7 +222,7 @@ možné provádět měření i v plynné fázi.
 Interpretaci fotoelektronového spektra si můžeme vyzkoušet například na
 spektru neznámého prvku na následujícím obrázku.
 
-![image](pes-Mg.png)
+![](../images/pes-Mg.png)
 
 Víme, že ve fotoelektronovém spektru je vynesena hodnota vazebné energie
 jednotlivých elektronů. Pro elektrony ve vnitřních slupkách je vazebná
@@ -275,7 +269,8 @@ $E = h\nu = \frac{hc}{\lambda}$ dostáváme
 $$\boxed{\lambda = \frac{h}{p}}
 \label{rov:Fotojev6}$$
 
-[Laserové chlazení atomů]{} Světlo si většinou nespojujeme s chlazením,
+### BOX: Laserové chlazení atomů
+Světlo si většinou nespojujeme s chlazením,
 spíše máme zkušenost, že nás světlo dokáže zahřát. Světlo je ale
 částice. Když se srazí s atomem, předá mu svou hybnost a může jej tím
 zpomalit! Pro získání představy si vypočítejme následující úlohu.
@@ -324,29 +319,29 @@ dát do souvislosti s planetárním modelem atomu a jeho model měl v sobě
 již některé z rysů kvantové teorie. Předpokládal, že se elektron
 pohybuje po kruhové dráze, na které musí být odstředivá síla rotující
 částice kompenzována přitažlivou silou elektrostatickou
-$$\frac{\me v^2}{r} = \frac{1}{4\pi \varepsilon_0}\frac{Ze^2}{r^2}
+$$\frac{m_{\mathrm{e}} v^2}{r} = \frac{1}{4\pi \varepsilon_0}\frac{Ze^2}{r^2}
 \label{rov:Spektrumvodiku2}$$ Nyní ale máme nekonečné množství stavů, po
 kterých se částice mohou pohybovat – podle toho, jakou zvolíme rychlost,
 musíme zvolit také příslušný poloměr. Bohr ale navíc předpokládal, že
 moment hybnosti může nabývat pouze hodnot celistvých násobků konstanty
-$\hbar=\nicefrac{h}{2\pi}$ $$\me vr = \hbar n 
+$\hbar=\nicefrac{h}{2\pi}$ $$m_{\mathrm{e}} vr = \hbar n 
 \label{rov:Spektrumvodiku3}$$ Proč ho něco takového napadlo? Aby to
 vyšlo! Z podmínky vyjádříme rychlost $v$ jako funkci $r$ a dosadíme do
 podmínky . Získáme vztah
-$$r = \frac{4\pi\varepsilon_0\hbar^2}{Z\me e^2}n^2
+$$r = \frac{4\pi\varepsilon_0\hbar^2}{Zm_{\mathrm{e}} e^2}n^2
 \label{rov:Spektrumvodiku4}$$ a pro rychlost
 $$v = \frac{Ze^2}{4\pi\varepsilon_0\hbar}\frac{1}{n}
 \label{rov:Spektrumvodiku5}$$ Po dosazení do vztahu pro energii
 dostaneme
-$$\boxed{E = \frac{1}{2}\me v^2 - \frac{Ze^2}{4\pi\varepsilon_0r} = - \frac{Z^2\me e^4}{8 \varepsilon_0^2 h^2}\frac{1}{n^2} = -\frac{13{,}6 Z^2}{n^2}\si{\eV}}
+$$\boxed{E = \frac{1}{2}m_{\mathrm{e}} v^2 - \frac{Ze^2}{4\pi\varepsilon_0r} = - \frac{Z^2m_{\mathrm{e}} e^4}{8 \varepsilon_0^2 h^2}\frac{1}{n^2} = -\frac{13{,}6 Z^2}{n^2}\si{\eV}}
 \label{Spektrumvodiku6}$$ Poloměr, rychlost i energie jsou tedy
 kvantovány. K přechodu mezi dvěma elektronovými stavy může dojít pouze
 tehdy, jestliže rozdíl energií počátečního a konečného stavu je roven
 energii fotonu $$E_2-E_1 = h\nu
 \label{rov:Spektrumvodiku7}$$ tedy
-$$\frac{Z^2\me e^4}{8\varepsilon_0^2h^2}\left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right ) = h\nu = hc\widetilde{\nu}
+$$\frac{Z^2m_{\mathrm{e}} e^4}{8\varepsilon_0^2h^2}\left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right ) = h\nu = hc\widetilde{\nu}
 \label{rov:Spektrumvodiku8}$$ Pro vlnočet fotonu tak dostaneme
-$$\widetilde{\nu} = \frac{Z^2\me e^4}{8\varepsilon_0^2 h^3c}\left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right ) = \num{10973731} \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right ) \mathrm{cm} ^{-1}
+$$\widetilde{\nu} = \frac{Z^2m_{\mathrm{e}} e^4}{8\varepsilon_0^2 h^3c}\left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right ) = \num{10973731} \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right ) \mathrm{cm} ^{-1}
 \label{rov:Spektrumvodiku9}$$ Což je přesně experimentálně pozorovaný
 vztah. Zdá se tedy, že kvantována není pouze energie, ale také moment
 hybnosti částice. Kvantování jako by bylo obecným rysem světa molekul.
@@ -391,8 +386,8 @@ v dalším vývoji kvantové teorie zásadní roli.
 De Broglieův vztah umožňuje také interpretovat Bohrovu kvantovou
 podmínku . Elektron kolem atomového jádra si pak můžeme představit jako
 stojaté vlnění, kdy na obvod kruhu je třeba vměstnat celistvý násobek de
-Broglievých vlnových délek $$2\pi r = n \frac{h}{\me v}
-\label{Dualismus2}$$ tedy $$\me vr = \frac{h}{2\pi}n = \hbar n
+Broglievých vlnových délek $$2\pi r = n \frac{h}{m_{\mathrm{e}} v}
+\label{Dualismus2}$$ tedy $$m_{\mathrm{e}} vr = \frac{h}{2\pi}n = \hbar n
 \label{Dualismus3}$$
 
 [Experimentální důkazy interference částic]{} Pokud by částice,
@@ -422,7 +417,7 @@ naměřeném interferenčním obrazci byla patrna maxima nultého a prvního
 řádu. Přibližný nákres interferenčního obrazce je na následujícím
 obrázku.
 
-![image](fullerene_diffraction2-bw.png)
+![image](../images/fullerene_diffraction2-bw.png)
 
 Elektronová difrakce je využívána v některých experimentálních
 technikách jako je LEED (*Low Electron Energy Diffraction*). Elektrony
@@ -455,23 +450,23 @@ $$\Psi(x,t) = \psi(x)\cos(\omega t)
 funkci, o které budeme mluvit dále. V tuto chvíli nechme otázku, co se
 vlastně vlní, otevřenou. Pro všechny vlny platí vlnová rovnice, měla by
 proto platit i pro vlnu popisující elektron. Tj.
-$$\frac{\pd^2\Psi(x,t)}{\pd x^2} = \frac{1}{v^2}\frac{\pd^2\Psi(x,t)}{\pd t^2}
+$$\frac{\partial^2\Psi(x,t)}{\partial x^2} = \frac{1}{v^2}\frac{\partial^2\Psi(x,t)}{\partial t^2}
 \label{rov:Pohyboverovnice2}$$ Po dosazení ze vztahu
-$$\frac{\dd^2\psi(x)}{\dd x^2} + \frac{\omega^2}{v^2}\psi(x) = 0 
+$$\frac{\mathrm{d}^2\psi(x)}{\mathrm{d} x^2} + \frac{\omega^2}{v^2}\psi(x) = 0 
 \label{rov:Pohyboverovnice3}$$ Uvažme nyní, že
 $$\omega = 2\pi\nu = \frac{2\pi v}{\lambda}
 \label{rov:Pohyboverovnice4}$$ a dosaďme za vlnovou délku z de Brogliova
 vztahu $\lambda = \frac{h}{p}$ a za $\frac{p^2}{2m}=E-V$. Úpravou
 dostáváme
-$$\frac{\dd^2\psi(x)}{\dd x^2} + \frac{8\pi^2 m}{h^2}(E - V(x))\psi(x) = 0 
+$$\frac{\mathrm{d}^2\psi(x)}{\mathrm{d} x^2} + \frac{8\pi^2 m}{h^2}(E - V(x))\psi(x) = 0 
 \label{rov:Pohyboverovnice5}$$ nebo též
-$$\boxed{-\frac{\hbar^2}{2m}\frac{\dd^2\psi(x)}{\dd x^2} + V(x)\psi(x) = E\psi(x)}
+$$\boxed{-\frac{\hbar^2}{2m}\frac{\mathrm{d}^2\psi(x)}{\mathrm{d} x^2} + V(x)\psi(x) = E\psi(x)}
 \label{rov:historie:bezcasova_SCHR_1D}$$ Vztah je bezčasová
 **Schrödingerova rovnice**. Kompaktně jí můžeme napsat ve tvaru
 $$\hat{H}\psi = E\psi
 \label{rov:Pohyboverovnice7}$$ kde symbolem $\hat{H}$ rozumíme operátor
 (více si o operátorech povíme v příští kapitole)
-$$\hat{H} = -\frac{\hbar^2}{2m}\frac{\dd^2}{\dd x^2} + V
+$$\hat{H} = -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2}{\mathrm{d} x^2} + V
 \label{rov:Pohyboverovnice8}$$ Jejím řešením jsou možné hodnoty energie
 a jím příslušející vlnové funkce. Je to poněkud zvláštní rovnice, neboť
 má dvě neznámé veličiny, $E$ a funkci $\psi$. Zdálo by se tedy, že
@@ -479,7 +474,7 @@ kupříkladu energii si můžeme zvolit a vlnovou funkci k ní dopočítat.
 Energie by tak nebyla kvantována – níže se dozvíme, kde se kvantování
 energie bere.
 
-Bornova interpretace vlnové funkce {#kap:Bornova interpretace vlnové funkce}
+Bornova interpretace vlnové funkce
 ----------------------------------
 
 Co to vlastně je ona vlnová funkce? Můžeme vyjít z analogie z optiky.
@@ -488,21 +483,21 @@ pole. Intenzita světla v určitém bodě je pak dána jako čtverec intenzity
 elektrického pole. Vedeni touto analogií, můžeme s Maxem Bornem
 interpretovat vlnovou funkci jako amplitudu pravděpodobnosti. Čtverec
 vlnové funkce bude mít pak význam hustoty pravděpodobnosti nalezení dané
-částice v určitém bodě $$f(x)\dd x = |\Psi (x)|^2\dd x 
+částice v určitém bodě $$f(x)\mathrm{d} x = |\Psi (x)|^2\mathrm{d} x 
 \label{rov:Born1}$$
 
 [Co máme na mysli hustotou pravděpodobnosti?]{} Existuje nekonečně mnoho
 poloh $x$, kam můžeme částici umístit. Pravděpodobnost nalezení částice
 v jedné konkrétní poloze je tudíž nulová. Můžeme se ale ptát, jaká je
 pravděpodobnost, že se částice bude nacházet v intervalu $x$, $x$+d$x$.
-Tato pravděpodobnost $P(x, x+\dd x)$ bude záviset na velikosti intervalu
+Tato pravděpodobnost $P(x, x+\mathrm{d} x)$ bude záviset na velikosti intervalu
 d$x$. Pro nekonečně malý interval d$x$ bude opět nekonečně malá.
-Vydělením $P(x,x+\dd x)$ intervalem d$x$ získáme konečnou veličinu,
-hustotu pravděpodobnosti $f$ $$f(x) = \frac{P(x, x+\dd x)}{\dd x}$$ pro
-kterou musí platit normalizační podmínka $$\int f(x) \dd x = 1$$
+Vydělením $P(x,x+\mathrm{d} x)$ intervalem d$x$ získáme konečnou veličinu,
+hustotu pravděpodobnosti $f$ $$f(x) = \frac{P(x, x+\mathrm{d} x)}{\mathrm{d} x}$$ pro
+kterou musí platit normalizační podmínka $$\int f(x) \mathrm{d} x = 1$$
 
 Z Bornovy interpretace pak plyne normalizační podmínka pro vlnovou
-funkci $$\int |\Psi(x)|^2 \dd x = 1
+funkci $$\int |\Psi(x)|^2 \mathrm{d} x = 1
 \label{rov:Born2}$$ která říká, že částice musí být někde v prostoru.
 Tato podmínka vlastně představuje další rovnici, kterou musíme dodat ke
 Schrödingerově rovnici . Na vlnovou funkci pak s ohledem na obě rovnice
@@ -536,7 +531,7 @@ Výše jsme navodili časově nezávislou Schrödingerovu rovnici, jejímž
 řešením získáme možné energie, se kterými se částice může pohybovat.
 Časově nezávislá Schrödingerova rovnice se dá odvodit z časově závislé
 Schrödingerovy rovnice
-$$\boxed{\ii\hbar \frac{\pd\Psi}{\pd t} = \hat{H}\Psi}
+$$\boxed{\mathrm{i}\hbar \frac{\partial\Psi}{\partial t} = \hat{H}\Psi}
 \label{rov:Casovachr1}$$ Tato rovnice nám ukazuje vývoj stavu v čase.
 Známe-li vlnovou funkci v nějakém čase $t$, integrací Schrödingerovy
 rovnice získáme vlnovou funkci v libovolném čase příštím (a minulém).
@@ -553,17 +548,17 @@ Schrödingerovou rovnicí nesetkáme.
 Časově nezávislou Schrödingerovu rovnici je možné odvodit z časově
 závislé Schrödingerovy rovnice, pokud předpokládáme, že hamiltonián
 systému nezávisí na čase
-$$\hat{H} = -\frac{\hbar^2}{2m}\frac{\pd^2}{\pd x^2} + V(x)
+$$\hat{H} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V(x)
 \label{rov:}$$
 
 Za tohoto předpokladu můžeme použít metodu separace proměnných a hledat
 řešení Schrödingerovy rovnice ve tvaru součinu
 $\Psi (x, t) = \psi(x)\phi(t)$. Schrödingerovu rovnici pak můžeme napsat
 ve tvaru
-$$\ii \hbar \psi(x) \frac{\pd \phi(t)}{\pd t}=-\frac{\hbar^2 \phi(t)}{2m}\frac{\pd^2\psi(x)}{\pd x^2}+V(x)\psi(x)\phi(t)
+$$\mathrm{i} \hbar \psi(x) \frac{\partial \phi(t)}{\partial t}=-\frac{\hbar^2 \phi(t)}{2m}\frac{\partial^2\psi(x)}{\partial x^2}+V(x)\psi(x)\phi(t)
 \label{rov:Bezcasova1}$$ Pokud vydělíme celou rovnici členem
 ${\psi(x)\phi(t)}$, získáme rovnici v následujícím tvaru
-$$\ii \hbar \frac{1}{\phi(t)} \frac{\pd \phi(t)}{\pd t}=-\frac{\hbar^2}{2m}\frac{1}{\psi(x)}\frac{\pd^2 \psi(x)}{\pd x^2} + V(x)
+$$\mathrm{i} \hbar \frac{1}{\phi(t)} \frac{\partial \phi(t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{1}{\psi(x)}\frac{\partial^2 \psi(x)}{\partial x^2} + V(x)
 \label{rov:Bezcasova2}$$ Levá strana rovnice závisí pouze na čase, pravá
 strana rovnice pouze na poloze. Aby byla rovnice splněna pro libovolné
 hodnoty času a polohy, musí být obě strany rovny konstantě. Tuto
@@ -571,32 +566,32 @@ konstantu si označíme písmenem $E$. Snadno se přesvědčíte, že konstanta
 by skutečně měla mít rozměr energie. Získáme tak dvě rovnice. Rovnice
 vycházející z pravé strany není než časově nezávislou Schrödingerovou
 rovnicí
-$$E{\psi(x)}= -\frac{\hbar^2}{2m}\frac{\pd^2 \psi(x)}{\pd x^2} + V(x)\psi(x)
+$$E{\psi(x)}= -\frac{\hbar^2}{2m}\frac{\partial^2 \psi(x)}{\partial x^2} + V(x)\psi(x)
 \label{rov:Bezcasova3}$$ Rovnici vycházející z levé strany musíme
-dořešit $$\ii \hbar \frac{1}{\phi(t)} \frac{\pd \phi(t)}{\pd t}=E
+dořešit $$\mathrm{i} \hbar \frac{1}{\phi(t)} \frac{\partial \phi(t)}{\partial t}=E
 \label{rov:Bezcasova4}$$
 
 což po separaci proměnných a integraci vede k
-$$\ii \hbar \ln\phi(t) = Et + C
+$$\mathrm{i} \hbar \ln\phi(t) = Et + C
 \label{rov:Bezcasova5}$$ kde $C$ je konstanta. Funkce $\phi(t)$ má pak
 tvar
-$$\phi(t) = \ee^{C} \ee^{-\ii Et/\hbar}=\ee^{-\ii Et/\hbar} = \ee^{-\ii\omega t}
+$$\phi(t) = \mathrm{e}^{C} \mathrm{e}^{-\mathrm{i} Et/\hbar}=\mathrm{e}^{-\mathrm{i} Et/\hbar} = \mathrm{e}^{-\mathrm{i}\omega t}
 \label{rov:Bezcasova6}$$
 
 kde za $C$ jsme dosadili nulu z důvodů normalizace vlnové funkce.
 Vlnovou funkci systému tedy můžeme zapsat jako
-$$\Psi(x,t) =  \psi(x) \ee^{-\ii\omega t}
+$$\Psi(x,t) =  \psi(x) \mathrm{e}^{-\mathrm{i}\omega t}
 \label{rov:Bezcasova7}$$ Je patrné, že v tomto případě je řešení časově
 závislé rovnice současně i řešením časově nezávislé rovnice. Tvary
 vlnových funkcí se totiž liší pouze fázovým faktorem členem
-$\ee^{-\ii\omega t} $, který neovlivňuje hustotu pravděpodobnosti
-$$\Psi(x,t) \Psi^{*}(x,t) = \psi(x)\ee^{-\ii\omega t}\psi^{*} \ee^{\ii\omega t} = \psi(x)\psi^{*}(x)
+$\mathrm{e}^{-\mathrm{i}\omega t} $, který neovlivňuje hustotu pravděpodobnosti
+$$\Psi(x,t) \Psi^{*}(x,t) = \psi(x)\mathrm{e}^{-\mathrm{i}\omega t}\psi^{*} \mathrm{e}^{\mathrm{i}\omega t} = \psi(x)\psi^{*}(x)
 \label{rov:Bezcasova8}$$ Využili jsme zde některých vlastností
 komplexních funkcí, se kterými se blíže seznámíme v oddíle
 \[kap:KomplexniCisla\]. Jelikož hustota pravděpodobnosti se nemění
 s časem, mluvíme v tomto případě o stacionárních stavech.
 
-Relace neurčitosti {#kap:relace-neurcitosti}
+Relace neurčitosti
 ------------------
 
 Měření veličin v kvantové mechanice má určitá specifika. Existují
@@ -643,14 +638,15 @@ experimentu nebo doba, po kterou daný stav existuje. Pokud nás tedy
 zajímají procesy s velmi krátkou dobou života, musíme počítat s velkou
 neurčitostí energie.
 
-                                              klas. mech.                                         kvant. mech
-  -------------------------- ---------------------------------------------- -------------------------------------------------------
-  Stav                                  $\vec{r}(t), \vec{p}(t)$                               $\Psi(\vec{r},t)$
-  Pohybové rovnice            $m\frac{\dd ^2 \vec{r}}{\dd t^2} = \nabla V$      $ \ii\hbar\frac{\pd \Psi}{\pd t} = \hat{H}\Psi$
-  Časově nezávislé rovnice            $\frac{mv^2}{\vec{r}} = F $                            $\hat{H}\psi = E\psi$
-  Relace neurčitosti                               -                         $\Delta x \Delta p \geq \frac{\hbar}{2} \mbox{ atp.}$
+**Tab 1**: Srovnání klasické a kvantové mechaniky
 
-  : Srovnání klasické a kvantové mechaniky
+|                         |                   klasická mechanika         |           Kvantová mechanika                    |
+|:----------------------- |:--------------------------------------------:|:-----------------------------------------------:|
+| Stav                    | $\vec{r}(t), \vec{p}(t)$                     |                     $\Psi(\vec{r},t)$           |
+| Pohybové rovnice        | $m\frac{\mathrm{d} ^2 \vec{r}}{\mathrm{d} t^2} = \nabla V$   |   $ \mathrm{i}\hbar\frac{\partial \Psi}{\partial t} = \hat{H}\Psi$ |
+| Časově nezávislé rovnice |       $\frac{mv^2}{\vec{r}} = F $           |                  $\hat{H}\psi = E\psi$             |
+| Relace neurčitosti       |                    ---                      |   $\Delta x \Delta p \geq \frac{\hbar}{2} \mbox{ atp.}$ |
+
 
 **Zadání:** Atom kyslíku, ze kterého je vyražen vnitřní elektron, má
 dobu života asi 4 fs. Jakou můžeme očekávat nejmenší šířku spektra
@@ -658,7 +654,7 @@ v rentgenových absorpčních spektrech pro tento atom? Výsledek uveďte
 v jednotkách eV.
 
 **Řešení:** Neurčitost energie je dána vztahem
-$$\Delta E \geq \Delta t  \frac{\hbar}{2} = 4\cdot 10^{-15} \frac{1{,}054\cdot 10^{-34}}{2} = \SI{0{,}0822}{\eV}
+$$\Delta E \geq \Delta t  \frac{\hbar}{2} = 4\cdot 10^{-15} \frac{1{,}054\cdot 10^{-34}}{2} = 0{,}0822 \mathrm{eV}
 \label{rov:Neurcitost5}$$
 
 Šířka spektra bývá ve skutečnosti větší, kupříkladu díky tzv.
@@ -666,7 +662,7 @@ dopplerovskému rozšíření spektra. Šířka spektra daná relacemi
 neurčitosti ale nemůže být zmenšena kupříkladu vylepšenými
 experimentálními technikami.
 
-Kde se dozvíte více? {#kde-se-dozvíte-více .unnumbered}
+Kde se dozvíte více?
 --------------------
 
 Populární úvod do kvantové mechaniky spolu s diskuzí základních

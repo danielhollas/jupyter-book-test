@@ -14,7 +14,7 @@ Věříme, že alespoň část posluchačů se na někdy trnitou cestu kvantové
 chemie vydá s námi. Jsme si navíc skoro jisti, že totéž by dnes učinil
 i Auguste Comte, pokud by se znovu narodil.
 
-Jak tento text vznikal? {#jak-tento-text-vznikal .unnumbered}
+Jak tento text vznikal?
 -----------------------
 
 Předkládaný text je komunitním dílem, které vzniklo na základě přednášek
@@ -27,7 +27,7 @@ naučit. Významný český chemik Otto Wichterle sice kdysi poznamenal, že
 žádný kolektiv ještě nevytvořil operu. Kdyby ale viděl třeba dnešní
 Wikipedii, možná by vytvořil tým i na tu operu.
 
-Co potřebuji znát, než se pustím do studia? {#co-potřebuji-znát-než-se-pustím-do-studia .unnumbered}
+Co potřebuji znát, než se pustím do studia?
 -------------------------------------------
 
 Předpokládáme znalosti matematické analýzy v rámci úvodních kurzů na
@@ -36,7 +36,7 @@ kvantové mechaniky v rozsahu základních přednášek z Anorganické chemie
 I a II, případně Fyziky II a Teoretické chemie, základy kvantové teorie
 jsou ale stručně shrnuty.
 
-Co ve skriptech chybí a co přebývá? {#co-ve-skriptech-chybí-a-co-přebývá .unnumbered}
+Co ve skriptech chybí a co přebývá?
 -----------------------------------
 
 Text je pouze úvodem. Nejsou pokryty formálnější partie kvantové chemie,
@@ -48,7 +48,7 @@ výpočetní chemie či molekulové spektroskopie. Text naopak obsahuje
 pasáže, které nejsou přednášeny – například kapitoly o molekulové
 symetrii či pevných látkách. Přidáváme je pro úplnost pro zájemce.
 
-> Dokonalost spočívá v~maličkostech, ale dokonalost není maličkost.
+> Dokonalost spočívá v maličkostech, ale dokonalost není maličkost.
 
 Citátem Michelangela Buonarrotiho uvedl jeden z recenzentů, prof. Jiří
 Kolafa, impozantní sbírku nejrůznějších chyb nalezených v našem textu.
@@ -59,11 +59,12 @@ překlepů, gramatických pochybení, typografických nešvarů či docela
 normálních nesmyslů. Budeme za upozornění na chyby vděčni a
 v elektronické verzi je budeme průběžně upravovat.
 
-Kde najdu errata a aktuální verzi skript? {#kde-najdu-errata-a-aktuální-verzi-skript .unnumbered}
+Kde najdu errata a aktuální verzi skript?
 -----------------------------------------
 
 Na stránkách ![](http://photox.vscht.cz/education.php) naleznete aktuální
 verzi tohoto textu, v barvě i černobíle. Text bude k dispozici také na
 oficiálních stránkách předmětu
-<https://ufch.vscht.cz/studium/mgr/kvantova_chemie>. Za autory Eva
-Muchová a Petr Slavíček
+<https://ufch.vscht.cz/studium/mgr/kvantova_chemie>. 
+
+Za autory Eva Muchová a Petr Slavíček
